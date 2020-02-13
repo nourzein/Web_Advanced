@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#main-container {
+  margin: 20px;
+}
+.title {
+  text-align: center;
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+}
+
+.explanation {
+  width: 25%;
+}
+
+.spirals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+  border-style: solid;
+  border-color: "black";
+}
+
+.spiral {
+  margin: 10px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: "black";
+}

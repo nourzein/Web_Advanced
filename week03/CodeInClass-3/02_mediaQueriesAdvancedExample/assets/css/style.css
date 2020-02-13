@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css?family=Work+Sans:300,400,700";
+
+body {
+  background-color: indigo;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+}
+
+body,
+a {
+  margin: 0;
+  color: white;
+}
+.clear {
+  clear: both;
+}
+
+.items {
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+  float: left;
+}
+
+/* FIXED HEADER */
+
+/* CONTAINER */
+
+/* COLUMNS */
+
+/* GRID */
+#item1 {
+  background: #37bc9b;
+}
+#item2 {
+  background: #da4453;
+}
+#item3 {
+  background: #f6bb42;
+}
+#item4 {
+  background: #3bafda;
+}
+#item5 {
+  background: #4a89dc;
+}
+#item6 {
+  background: #e9573f;
+}
+#item7 {
+  background: #434a54;
+}
+#item8 {
+  background: #d770ad;
+}
+#item9 {
+  background: #8cc152;
+}
+#item10 {
+  background: #967adc;
+}
+#item11 {
+  background: #e6e9ed;
+  color: #333;
+}
+#item12 {
+  background: #aab2bd;
+  color: #333;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1080px) {
+  /* just put the values that you want to change */
+  body {
+    background-color: pink;
+  }
+
+  .items {
+    width: calc(100% / 4);
+    height: calc(100vw / 4);
+  }
+  
+  #mobile {
+    display: none;
+  }
+}
+/* you can change a device's orientation */
+/* @media screen and (min-width: 500px) and (min-device-width: 500px) and (orientation: portrait) {
+  body {
+    background-color: lightgreen;
+  }
+} */
+
+/* desktop */
+
+@media screen and (min-width: 1050px) {
+}
+
+@media screen and (min-width: 500px) and (min-device-width: 500px) {
+}
+
+/* tablet */
+@media screen and (min-width: 780px) and (min-device-width: 500px) {
+}
+
+/* FOR MOBILE DEVICES*/
+/* Source for different devices http://cssmediaqueries.com/target/ */
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+}
+
+/* seems to be a difference between Android and iOS, device-width and device-height changes with orientation*/
+@media screen and (max-device-width: 500px) and (orientation: landscape) {
+}

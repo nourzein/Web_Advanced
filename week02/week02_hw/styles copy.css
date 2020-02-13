@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 80%;
+  max-width: 2000px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+}
+.card {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, inmax(330px, 1fr));
+  grid-row-gap: 1.5rem; */
+  margin: 10px;
+  padding: 7px;
+  width: 300px;
+  height: 200px;
+  background-color: transparent;
+  border: 4px solid #f1f1f1;
+  text-align: center;
+}
+
+.inner-card {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.inner-card:hover {
+  transform: rotateY(180deg);
+}
+
+/* .card:hover .inner-card {
+  transform: rotateY(180deg);
+} */
+
+.question,
+.answer {
+  /* display = none; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  top: 50%;
+}
+
+.answer {
+  /* background-color: dodgerblue;
+  color: white; */
+  transform: rotateY(180deg);
+}
+
+/*.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  } */
+
+/* .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  } */
+/* 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+/* } */
