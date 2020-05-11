@@ -20,7 +20,7 @@
   </head>
   <body>
     <script>
-      d3.json("africa.geo.json").then(geojson => {
+      d3.json("Community Districts.geojson").then(geojson => {
         console.log(geojson);
         let svg = d3.select("body").append("svg");
         var projection = d3.geoEqualEarth();
@@ -29,7 +29,8 @@
           .data(geojson.features)
           .enter()
           .append("path")
-          .attr("d", d3.geoPath(projection));
+          .attr("d", d3.geoPath(projection))
+          .attr("stroke", "black");
       });
     </script>
   </body>
